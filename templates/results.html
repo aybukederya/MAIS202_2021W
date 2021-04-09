@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Guess the Composer</title>
+{% endblock %}
+
+{% block body %}
+<br>
+<h1 style="font-family:fantasy; text-align: center">Guess the Composer!</h1>
+<hr>
+
+<p style="font-family:monospace"> You guessed {{ user_prediction }} </p>
+<p style="font-family:monospace"> Computer guessed {{ computer_prediction }} </p>
+<p style="font-family:monospace"> Correct composer was {{ correct_composer }} </p>
+
+<hr>
+
+{% if only_user_correct %}
+<p style="font-family:monospace">You were right! Computer was wrong! </p>
+{% endif %}
+
+{% if only_computer_correct %}
+<p style="font-family:monospace"> Computer was right! You were wrong! </p>
+{% endif %}
+
+{% if both_correct %}
+<p style="font-family:monospace"> You and computer were both right! </p>
+{% endif %}
+
+{% if both_false %}
+<p style="font-family:monospace"> You and computer were both wrong! </p>
+{% endif %}
+
+<hr>
+<p style="font-family:monospace"> The piece was {{ canonical_title }} </p>
+<hr>
+
+<p style="font-family:monospace; text-align: center;  margin-left: 20px"> Ready for the next round? </p> 
+<form action="/" method="POST">
+    <input type="submit" class="btn btn-outline-success"  name="challenge" value="Ready!" style="float: right; width: 18.5%; margin-left: 40%; margin-right: 40%; margin-bottom: 0.5em; font-family:monospace">
+</form>
+
+
+
+{% endblock %}
