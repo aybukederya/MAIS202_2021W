@@ -1,7 +1,4 @@
 # MAIS202_2021W
-2021 Winter MAIS202 Project
-
-
 2021 Winter MAIS202 Final Project
 
 Piece-composer identifier using Random Forest classifier. From Maestro dataset, Midi files of 5 composers are used to train the model.
