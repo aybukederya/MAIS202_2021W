@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<br>
+<title>Guess the Composer</title>
+{% endblock %}
+
+{% block body %}
+<h1 style="font-family:fantasy; text-align: center">Guess the Composer!</h1>
+<hr>
+<p style="font-family:monospace; font-size:15px"> Hi! Are you confident in your musical knowledge? Can you identify pieces with their composers easily? Do you know all the piano pieces of Chopin? Are you a Bach fan? Well, the computer is challenging you for a competition! In this competition, you will listen to five pieces and your aim is to select their correct composers. The computer will do the same. I guarentee you that the computer has never heard any of these pieces. Yet, it was trained on hundreds of pieces by Bach, Beethoven, Chopin, Liszt and Schubert. Are you up for the challenge? </p>
+
+
+<form action="/" method="POST">
+    <input type="submit" class="btn btn-outline-success" name="challenge" value="YES!" style="float: right; width: 18.5%; margin-left: 40%; margin-right: 40%; margin-bottom: 0.5em; font-family: monospace; font-size:13px">
+</form>
+
+<br>
+<br>
+<br>
+<hr>
+
+<footer style="font-family:monospace; font-size:13px"> by Aybüke Derya Ekiz as Winter 2021 MAIS 202 Bootcamp Final Project</footer>
+
+{% endblock %}

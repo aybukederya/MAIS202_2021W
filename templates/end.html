@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Guess the Composer</title>
+{% endblock %}
+
+{% block body %}
+<br>
+<h1 style="font-family:fantasy; text-align: center">Guess the Composer!</h1>
+<hr>
+
+<p style="font-family:monospace; font-size:15px; margin-left: 10px;"> The round came to an end. </p>
+
+<section class = "finalscores">
+    <p style="font-family:monospace; font-size:15px; margin-left: 10px; margin-top: 10px"> Your final score: {{ your_final_score }}</p>
+    <p style="font-family:monospace; font-size:15px; margin-left: 10px"> Computer's final score: {{ computer_final_score }}</p>
+</section>
+
+<section class = "winner">
+    <p style="font-family:monospace; font-size:15px; margin-left: 10px;"> {{ winner }}</p>
+    <p style="font-family:monospace; font-size:15px; margin-left: 10px"> One more round?</p>
+</section>
+
+<form action="/end" method="POST">
+    <input type="submit" class="btn btn-outline-success" name="play_again" value="YES!" style="float: right; width: 18.5%; margin-left: 40%; margin-right: 40%; margin-bottom: 0.5em; font-family: monospace; font-size:13px">
+</form>
+
+
+{% endblock %}

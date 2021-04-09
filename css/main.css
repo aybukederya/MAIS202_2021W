@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+    width: auto;
+    display: inline-block;    
+}
+
+img {
+    max-width: 20%; 
+    height: auto;    
+}​
+
+table, td, th {
+    border: 1px solid #aaa;
+}
+
+.scores {
+    margin-left: 5px;
+    border: double rgb(108, 213, 255);
+    width: 180px;
+    display: block;
+}
+
+.finalscores {
+    border: double rgb(21, 138, 5);
+    width: 250px;
+    display: block;
+}
+
+.winner {
+    text-align: center;
+}
+
+footer{
+	text-align: center;
+	font-size: 80%;
+}
+
+
+  
+
+
+
+
+
+
+
+
