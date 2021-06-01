@@ -69,7 +69,7 @@ Pygments==2.7.4
 pylint==2.6.0
 pymongo==3.11.2
 pyparsing==2.4.7
-python-3.8.5
+python-2.7.16
 python-dateutil==2.7.5
 pytz==2020.5
 PyYAML==3.13
