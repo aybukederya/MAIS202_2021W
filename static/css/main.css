@@ -1,7 +1,6 @@
-body, html {
-    margin: 0;
-    font-family: sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Trocchi&display=swap');
+
+
 
 .content {
     margin: 0 auto;
@@ -19,12 +18,15 @@ table, td, th {
     border: 1px solid #aaa;
 }
 
+
+
 .scores {
-    margin-left: 5px;
+    width: 26% !important;
+    margin-left: 10px;
     border: double rgb(108, 213, 255);
-    width: 180px;
-    display: block;
+    display: inline-block;
 }
+
 
 .finalscores {
     border: double rgb(21, 138, 5);
@@ -41,8 +43,11 @@ footer{
 	font-size: 80%;
 }
 
+mark{
+    background-color: #DDFFD6 !important;
+}
 
-  
+
 
 
 
