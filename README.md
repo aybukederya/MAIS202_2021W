@@ -3,7 +3,7 @@
 
 MAIS 202 is a bootcamp offered by McGill Artificial Intelligence Society. It is an intensive, ten-week long accelerated introduction to machine learning. "Guessthecomposer" is my final project of the MAIS 202. 
 
-"Guessthecomposer" is a game in which the user competes with the machine learning model to identify the composers of the newly heard pieces. The model is a random forest multiclass classifier, and it was trained on hundreds of pieces by Bach, Beethoven, Chopin, Liszt and Schubert, found in the Maestro Dataset. The model predicts the composer of the newly heard song, based on its numerous musical attributes and how they relate to the pieces of the same composers the computer was trained on.
+"Guessthecomposer" is a game in which the user competes with the machine learning model to identify the composers of the newly heard pieces. The model is a random forest multiclass classifier, and it was trained on hundreds of pieces by Bach, Beethoven, Chopin, Liszt and Schubert, found in the Maestro Dataset. The model predicts the composer of the newly heard song, based on its numerous musical attributes and how they relate to the pieces of the same composers the computer was trained on. The model has 77% accuracy on the validation set.
 
 To try your musical knowledge, please check out my deployed web-app: https://guessthecomposer.herokuapp.com/
 
