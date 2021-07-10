@@ -1,3 +1,9 @@
+<head>
+    <style>
+@import url('//fonts.googleapis.com/css2?family=Trocchi&display=swap');
+    </style>
+</head>
+
 {% extends 'base.html' %}
 
 {% block head %}
@@ -6,9 +12,12 @@
 {% endblock %}
 
 {% block body %}
-<h1 style="font-family:fantasy; text-align: center">Guess the Composer!</h1>
+<h1 style= "font-family: 'Papyrus', serif; text-align: center">Guess the Composer!</h1>
 <hr>
-<p style="font-family:monospace; font-size:15px"> Hi! Are you confident in your musical knowledge? Can you identify pieces with their composers easily? Do you know all the piano pieces of Chopin? Are you a Bach fan? Well, the computer is challenging you for a competition! In this competition, you will listen to five pieces and your aim is to select their correct composers. The computer will do the same. I guarentee you that the computer has never heard any of these pieces. Yet, it was trained on hundreds of pieces by Bach, Beethoven, Chopin, Liszt and Schubert. Are you up for the challenge? </p>
+<p style="font-family:monospace; font-size:15px; line-height:1.5"> Hi! Are you confident in your musical knowledge? Can you identify pieces with their composers easily? Do you know all the piano pieces of Chopin? Are you a Bach fan? Well, the computer is challenging you for a competition! <br> <br>
+In this competition, you will listen to five pieces and your aim is to select their correct composers. The computer will do the same. I guarentee you that the computer has never heard any of these pieces. 
+<br> <br> Yet, <mark>it was trained on hundreds of pieces by Bach, Beethoven, Chopin, Liszt and Schubert</mark>. It uses a <mark>random forest machine learning model to predict the composer</mark> of the newly heard song, based on its numerous musical attributes and how they relate to the pieces of the same composers the computer was trained on. 
+<br><br> I warn you: the model has an <mark>accuracy score of 77% on the validation set</mark>, which is three times the random guess accuracy! Are you up for the challenge? </p>
 
 
 <form action="/" method="POST">

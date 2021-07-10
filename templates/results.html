@@ -6,12 +6,30 @@
 
 {% block body %}
 <br>
-<h1 style="font-family:fantasy; text-align: center">Guess the Composer!</h1>
+<h1 style="font-family:'Papyrus', serif; text-align: center">Guess the Composer!</h1>
 <hr>
 
-<p style="font-family:monospace"> You guessed {{ user_prediction }} </p>
-<p style="font-family:monospace"> Computer guessed {{ computer_prediction }} </p>
-<p style="font-family:monospace"> Correct composer was {{ correct_composer }} </p>
+<p style="font-family:monospace"> <b>You</b> guessed <u> {{ user_prediction }} </u>
+{% if only_user_correct or both_correct %}
+<img src="static/images/correct.png" alt="correct" width="50" height="50"> </p>
+{% endif %}
+
+{% if only_computer_correct or both_false %}
+<img src="static/images/wrong.png" alt="correct" width="70" height="70"> </p>
+{% endif %}
+
+<p style="font-family:monospace"> <b>Computer</b> guessed <u> {{ computer_prediction }} </u>
+
+{% if only_computer_correct or both_correct %}
+<img src="static/images/correct.png" alt="correct" width="50" height="50"> </p>
+{% endif %}
+
+{% if only_user_correct or both_false %}
+<img src="static/images/wrong.png" alt="correct" width="70" height="70"> </p>
+{% endif %}
+
+<hr>
+<p style="font-family:monospace"> <b>Correct composer</b> was <u> {{ correct_composer }} </u> </p>
 
 <hr>
 
@@ -20,7 +38,7 @@
 {% endif %}
 
 {% if only_computer_correct %}
-<p style="font-family:monospace"> Computer was right! You were wrong! </p>
+<p style="font-family:monospace"> You were wrong! Computer was right!  </p>
 {% endif %}
 
 {% if both_correct %}
@@ -32,7 +50,7 @@
 {% endif %}
 
 <hr>
-<p style="font-family:monospace"> The piece was {{ canonical_title }} </p>
+<p style="font-family:monospace"> If you are interested, the piece was {{ canonical_title }} </p>
 <hr>
 
 <p style="font-family:monospace; text-align: center;  margin-left: 20px"> Ready for the next round? </p> 
