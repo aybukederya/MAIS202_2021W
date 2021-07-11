@@ -1,4 +1,4 @@
-# MAIS202_2021W
+# Guess The Composer!
 2021 Winter MAIS 202 Final Project
 
 MAIS 202 is a bootcamp offered by McGill Artificial Intelligence Society. It is an intensive, ten-week long accelerated introduction to machine learning. "Guessthecomposer" is my final project of the MAIS 202. 
